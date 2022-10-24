@@ -1,0 +1,24 @@
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.heading {
+    color: blueviolet;
+}
+
+.text {
+    color: #153a5f;
+    border: 1px solid black;
+}
+
+.block {
+    width: 450px;
+    height: 350px;
+    border: 1 px solid #000;
+    background-color: #ccc;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
