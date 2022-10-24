@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'True Gothic Cyr';
+    src: url('TrueGothicCyr.eot');
+    src: local('True Gothic Cyr'), local('TrueGothicCyr'),
+        url('TrueGothicCyr.eot?#iefix') format('embedded-opentype'),
+        url('TrueGothicCyr.woff2') format('woff2'),
+        url('TrueGothicCyr.woff') format('woff'),
+        url('TrueGothicCyr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
