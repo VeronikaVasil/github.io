@@ -1,24 +1,37 @@
 .title {
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
+}
+
+div {
+  height: 200px;
+  background: linear-gradient(to top left, powderblue, pink);
 }
 
 .heading {
-    color: blueviolet;
+  font-family: Helvetica Neue, sans-serif;
+  color: blueviolet;
+}
+
+h1 {
+  text-align: center;
+  position: static;
+  color: seagreen;
+}
+
+h2 {
+  text-align: center;
+  position: static;
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  color: seagreen;
 }
 
 .text {
-    color: #153a5f;
-    border: 1px solid black;
-}
 
-.block {
-    width: 450px;
-    height: 350px;
-    border: 1 px solid #000;
-    background-color: #ccc;
-    background-image: url();
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 75%;
+  font-family: Helvetica Neue, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #153a5f;
+  border: 1px solid black;
 }
