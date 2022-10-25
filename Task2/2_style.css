@@ -1,0 +1,50 @@
+.title {
+  text-align: center;
+  font-weight: bold;
+}
+
+div {
+  height: 200px;
+  background: linear-gradient(to top left, powderblue, pink);
+}
+
+.heading {
+  font-family: Helvetica Neue, sans-serif;
+  color: blueviolet;
+}
+
+h1 {
+  text-align: center;
+  position: static;
+  font-family: 'True Gothic Cyr', 'Franklin Gothic Medium', 'sans-serif';
+  color: seagreen;
+}
+
+h2 {
+  text-align: center;
+  position: static;
+  font-family: 'Roboto Gothic';
+  color: rgb(12, 29, 19);
+}
+
+.text {
+
+  font-family: Helvetica Neue, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #153a5f;
+  border: 1px solid black;
+}
+
+@font-face {
+  font-family: 'True Gothic Cyr';
+  src: url('TrueGothicCyr.eot');
+  src: local('True Gothic Cyr'), local('TrueGothicCyr'),
+    url('TrueGothicCyr.eot?#iefix') format('embedded-opentype'),
+    url('TrueGothicCyr.woff2') format('woff2'),
+    url('TrueGothicCyr.woff') format('woff'),
+    url('TrueGothicCyr.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
