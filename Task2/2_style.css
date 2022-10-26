@@ -32,12 +32,19 @@ h2 {
 .text {
 
   font-family: Helvetica Neue, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 28px;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 22px;
   color: #3b041f;
-  border: 2px solid rgb(0, 0, 0);
+  border: rgb(118, 225, 118) 4px solid;
   display: flex;
+  justify-content: space-around;
+}
+
+.img_me {
+  display: flex;
+  justify-content: flex-start;
+  width: 500px;
 }
 
 @font-face {
