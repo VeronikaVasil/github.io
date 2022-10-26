@@ -3,6 +3,6 @@
 let userName = prompt('Введите Ваше имя');
 
 function greeting() {                    /* функция greeting */
-    alert('Привет, ' + userName);
+  alert('Привет, ' + userName);
 }
 greeting();

@@ -2,4 +2,4 @@
 
 const tempCelsius = prompt('Введите температуру в градусах по Цельсию: ');
 const tempFahrenheit = (9 / 5) * tempCelsius + 32;
-alert(`Градусы по Цельсию: ${tempCelsius}, по Фаренгейту: ${tempFahrenheit.toFixed(1)}`);
+alert(`Градусы по Цельсию: ${tempCelsius}, по Фаренгейту: ${tempFahrenheit.toFixed()}`);
