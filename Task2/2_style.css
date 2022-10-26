@@ -42,8 +42,8 @@ h2 {
 }
 
 .img_me {
-  display: flex;
-  justify-content: flex-start;
+  display: inline-block, flex;
+  justify-content: center;
   width: 500px;
 }
 
