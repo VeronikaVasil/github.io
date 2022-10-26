@@ -3,38 +3,48 @@
   font-weight: bold;
 }
 
+.heading {
+  font-family: Helvetica Neue, sans-serif;
+  color: rgb(66, 18, 111);
+  background: linear-gradient (rgb(120, 227, 221), rgb(118, 225, 118));
+}
+
 div {
   height: 200px;
   background: linear-gradient(to top left, powderblue, pink);
 }
 
-.heading {
-  font-family: Helvetica Neue, sans-serif;
-  color: blueviolet;
-}
-
 h1 {
   text-align: center;
   position: static;
-  font-family: 'True Gothic Cyr', 'Franklin Gothic Medium', 'sans-serif';
+  font-family: italic, 'Franklin Gothic Medium', 'sans-serif';
   color: seagreen;
+  background: linear-gradient (to top left, rgb(120, 227, 221), rgb(118, 225, 118));
 }
 
 h2 {
   text-align: center;
   position: static;
-  font-family: 'Roboto Gothic';
+  font-family: 'True Gothic Cyr', 'Franklin Gothic Medium', 'sans-serif';
   color: rgb(12, 29, 19);
 }
 
 .text {
 
   font-family: Helvetica Neue, sans-serif;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #153a5f;
-  border: 1px solid black;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 22px;
+  color: #3b041f;
+  border: rgb(118, 225, 118) 4px solid;
+  display: flex;
+  justify-content: space-around;
+}
+
+.img_me {
+  display: inline-block, flex;
+  justify-content: center;
+  width: 500px;
 }
 
 @font-face {
