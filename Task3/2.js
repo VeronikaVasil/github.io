@@ -3,6 +3,6 @@
 const userName = prompt('Введите Ваше имя');
 
 function greeting(name) {                    /* функция greeting */
-  alert(`Привет, ${userName}`);
+  alert(`Привет, ${name}`);
 }
-greeting();
+greeting(userName);
