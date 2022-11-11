@@ -1,1 +1,1 @@
-let sum = +prompt(8 + "hello");
+let sum = 8 + "hello";
