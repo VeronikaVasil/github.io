@@ -1,8 +1,175 @@
- Cтруктура страницы сайта https://dzen.ru/ 
-
- Кодировка веб-сайта: UTF-8 
- Протокол сайта: 443
-Сайт доступен по HTTPS. SSL-Сертификат.
- Шапки сайта нет. Есть сверху блок для поисковых запросов, а под ним название (head): "Дзен"
-Подвал сайта отсутствует.
-Много различных виджетов: от новостых и сообщающих о погоде до рекламных (например, призыв установить яндекс.браузер).
+?php
+$name = "Игорь";
+$professional = "Ватокататель";
+$city="Екатеринбург";
+$post="qwerty@ya.ru";
+$тел = "812345678910";
+ 
+//имя, профессия, город/страна, e-mail, телефон. ЗАДАЙТЕ начальные переменные значения.
+ 
+$masNav = [
+	["нам" => "Программирование", "процент" => 83],
+    ["nam" => "Аналитика", "percent" => 29],
+    ["нам" => "Верстка", "процент" => 39],
+    ["нам" => "Управление", "процент" => 92],
+    ["нам" => "Колупание", "процент" => 100],
+];
+ 
+//Необходимо создать массив в самой верхней части php-файла, который будет описываться опытом работы (правая верхняя часть сайта). Необходимо вставить из массива данных на странице, а именно, название работ, имя и описание для каждой работы.
+ 
+$workExperience = [
+    ["name" => "Версальщик", "dateFrom" => "Январь 2020 - ", "dateTo" => "Настоящее время", "description" => "Версальщик – это специалист, который кодит страницы web-сайтов, разбивает текст на отдельных страницах, компонует его с иллюстрациями."],
+    ["name" => "Главный аналитик", "dateFrom" => "Февраль 2018 - ", "dateTo" => "Январь 2020", "description" => "Специалист ответственный отдел аналитики и представитель, занимающий всю выборку информации о влиянии" различные факторы по результатам работы организации."],
+    ["name" => "С# разработчик", "dateFrom" => "Январь 2016 - ", "dateTo" => "Февраль 2018", "description" => "C#-разработчик — это программист, использующий веб- сервисы и приложения, также встречающиеся геймдизайном, появляются десктопные и мобильные приложения, сервисы и другие сообщения программного обеспечения, использующие для этого языка программирования C# (читается: «си шарп»)."],
+    ["name" => "Руководитель ИТ-подразделения", "dateFrom" => "Март 2014 - ", "dateTo" => "Январь 2016", "description" => "ИТ-директор (от англ. CIO – Chief Information Сотрудник) – руководящая должность управления по информационным технологиям.
+    ["name" => "Оператор колупательного устройства", "dateFrom" => "Июнь 2010 - ", "dateTo" => "Март 2014", "description" => "Обеспечение управления работой оборудования (установок) среднего вида и назначения "],
+];
+?>
+ 
+<!ДОКТИП HTML>
+<html>
+  <голова>
+    <title>Мое резюме</title>
+    <мета-кодировка="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<ссылка rel="preconnect" href="https://fonts.gstatic.com" перекрестное происхождение>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <стиль>
+    html, body, h1, h2, h3, h4, h5, h6 {семейство шрифтов: 'Jost', без засечек;}
+    </стиль>
+  </голова>
+<body class="w3-светло-серый">
+ 
+<!-- Контейнер страницы -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+ 
+  <!-- Сетка -->
+  <div class="w3-row-padding">
+ 
+    <!-- Левая колонка -->
+    <div class="w3-третий">
+ 
+      <div class="w3-белый w3-текст-серый w3-карта-4">
+        <div class="w3-display-контейнер">
+          <img src="https://imgfon.ru/Images/Details_img_880px/Animals/glaza-belyy_fon-kotik-morda-polosatyy.webp" style="width:100%" alt="Аватар">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Имя</h2>
+          </div>
+        </div>
+        <div class="w3-контейнер">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Профессия</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Город, страна</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>Электронная почта</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>Телефон</p>
+          <час>
+ 
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
+          <p>Adobe Photoshop</p>
+          <div class="w3-светло-серый w3-круглый-xlarge w3-маленький">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>Фотография</p>
+          <div class="w3-светло-серый w3-круглый-xlarge w3-маленький">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>Иллюстратор</p>
+          <div class="w3-светло-серый w3-круглый-xlarge w3-маленький">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <p>Медиа</p>
+          <div class="w3-светло-серый w3-круглый-xlarge w3-маленький">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <br>
+ 
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Языки</b ></p>
+          <p>Английский</p>
+          <div class="w3-светло-серый w3-круглый-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Испанский</p>
+          <div class="w3-светло-серый w3-круглый-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
+          </div>
+          <p>Немецкий</p>
+          <div class="w3-светло-серый w3-круглый-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+ 
+    <!-- Конец левой колонки -->
+    </div>
+ 
+    <!-- Правая колонка -->
+    <div класс="w3-две трети">
+ 
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы </h2>
+        <div class="w3-контейнер">
+          <h5 class="w3-opacity"><b>Внешний разработчик </b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Январь 2015 г. – <span class="w3-tag w3-teal w3" -round">Текущий</span></h6>
+          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <час>
+        </div>
+        <div class="w3-контейнер">
+          <h5 class="w3-opacity"><b>Веб-разработчик / something.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>март 2012 г. – декабрь 2014 г.</h6>
+          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <час>
+        </div>
+        <div class="w3-контейнер">
+          <h5 class="w3-opacity"><b>Графический дизайнер / designsomething.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>июнь 2010 г. – март 2012 г.</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+        </div>
+      </div>
+ 
+      <div class="w3-контейнер w3-карта w3-белый">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Образование< /h2>
+        <div class="w3-контейнер">
+          <h5 class="w3-opacity"><b>gb.ru</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Навсегда</h6>
+          <p>Веб-разработка! Все, что мне нужно знать, в одном месте</p>
+          <час>
+        </div>
+        <div class="w3-контейнер">
+          <h5 class="w3-opacity"><b>Лондонская школа бизнеса</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013–2015</h6>
+          <p>Степень магистра</p>
+          <час>
+        </div>
+        <div class="w3-контейнер">
+          <h5 class="w3-opacity"><b>Школа кодирования</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010–2013</h6>
+          <p>Степень бакалавра</p><br>
+        </div>
+      </div>
+ 
+    <!-- Конец правой колонки -->
+    </div>
+ 
+  <!-- Конец сетки -->
+  </div>
+ 
+  <!-- Контейнер конечной страницы -->
+</div>
+ 
+<!-- Нижний колонтитул -->
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Найди меня в социальных сетях.</p>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+<!-- Конец нижнего колонтитула -->
+</нижний колонтитул>
+ 
+</тело>
+</html>
+ 
