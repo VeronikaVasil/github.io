@@ -125,9 +125,14 @@ $workExperience = [
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b><?php echo $workExperience [$i]["name"]; ?></b></h5>
                         <h6 class="w3-text-teal"><i
-                                class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $workExperience [$i]["dateFrom"]; ?>
-                            - <span class="w3-tag w3-teal w3-round"><?php echo $workExperience [$i]["dateTo"]; ?>
-                            </span></h6>
+                                class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $workExperience [$i]["dateFrom"]; ?>-
+                            <?php if ($i == 0): ?>
+                            <span class="w3-tag w3-teal w3-round"><?php echo $workExperience [$i]["dateTo"]; ?>
+                            </span>
+                            <?php else: ?>
+                            <?php echo $workExperience[$i]["dateTo"]; ?>
+                            <?php endif; ?>
+                        </h6>
                         <p> <?php echo $workExperience [$i]["description"]; ?> </p>
                         <hr>
                     </div>
@@ -160,16 +165,12 @@ $workExperience = [
                         <p>Bachelor Degree</p><br>
                     </div>
                 </div>
-
                 <!-- End Right Column -->
             </div>
-
             <!-- End Grid -->
         </div>
-
         <!-- End Page Container -->
     </div>
-
     <!-- Footer -->
     <footer class="w3-container w3-teal w3-center w3-margin-top">
         <p>Find me on social media.</p>
@@ -178,7 +179,6 @@ $workExperience = [
         <i class="fa fa-linkedin w3-hover-opacity"></i>
         <!-- End footer -->
     </footer>
-
 </body>
 
 </html>
