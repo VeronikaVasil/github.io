@@ -1,12 +1,24 @@
 <?php
 $workExperience = [
-    ["name" => "Разработчик 1С", "dateFrom" => "Январь 2015 - ", "dateTo" => "Настоящее время", "description" => "Занимается установкой и сопровождением программ для автоматизированного учета на базе 1С."],
-    ["name" => "Веб-разработчик", "dateFrom" => "Март 2012 - ", "dateTo" => "Декабрь 2014", "description" => "Программист, который умеет работать и на стороне клиента, и на стороне сервера."],
-    ["name" => "Графический дизайнер", "dateFrom" => "Январь 2010 - ", "dateTo" => "Март 2012", "description" => "Специалист, который разрабатывает элементы графики и изображений, оформляет веб-ресурсы, создаёт фирменные стили."],
-    ["name" => "Дизайнер интерьеров", "dateFrom" => "Ноябрь 2008 - ", "dateTo" => "Январь 2010", "description" => "Превращает помещение любого типа в красивое, удобное и функциональное пространство."],
+    ["name" => "Разработчик 1С", 
+    "dateFrom" => "Январь 2015  ", 
+    "dateTo" => "Настоящее время", 
+    "description" => "Занимается установкой и сопровождением программ для автоматизированного учета на базе 1С."],
+    ["name" => "Веб-разработчик",
+     "dateFrom" => "Март 2012  ",
+     "dateTo" => "Декабрь 2014",
+     "description" => "Программист, который умеет работать и на стороне клиента, и на стороне сервера."],
+    ["name" => "Графический дизайнер",
+     "dateFrom" => "Январь 2010  ", 
+     "dateTo" => "Март 2012", 
+     "description" => "Специалист, который разрабатывает элементы графики и изображений, оформляет веб-ресурсы, создаёт фирменные стили."],
+    ["name" => "Дизайнер интерьеров",
+     "dateFrom" => "Ноябрь 2008  ",
+     "dateTo" => "Январь 2010",
+     "description" => "Превращает помещение любого типа в красивое, удобное и функциональное пространство."],
     ];
-  
 ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -22,7 +34,6 @@ $workExperience = [
     <style>
     html,
     body,
-    h1,
     h2,
     h3,
     h4,
@@ -109,65 +120,65 @@ $workExperience = [
                     <h2 class="w3-text-grey w3-padding-16"><i
                             class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
                     <?php
-        for ($i = 0; $i < count ($workExperience); $i++) { 
-        ?>
+                   for ($i = 0; $i < count ($workExperience); $i++) { 
+                ?>
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><b><?php echo $workExperience [$i]["name"];
-          ?></b></h5>
+                        <h5 class="w3-opacity"><b><?php echo $workExperience [$i]["name"]; ?></b></h5>
                         <h6 class="w3-text-teal"><i
-                                class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $workExperience [$i]["dateFrom"]; ?>
-                            - <span class="w3-tag w3-teal w3-round"><?php echo $workExperience [$i]["dateTo"]; ?>
-                            </span></h6>
+                                class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $workExperience [$i]["dateFrom"]; ?>-
+                            <?php if ($i == 0): ?>
+                            <span class="w3-tag w3-teal w3-round"><?php echo $workExperience [$i]["dateTo"]; ?>
+                            </span>
+                            <?php else: ?>
+                            <?php echo $workExperience[$i]["dateTo"]; ?>
+                            <?php endif; ?>
+                        </h6>
                         <p> <?php echo $workExperience [$i]["description"]; ?> </p>
                         <hr>
                     </div>
                     <?php 
-  }
-  ?>
-
-                    <div class="w3-container w3-card w3-white">
-                        <h2 class="w3-text-grey w3-padding-16"><i
-                                class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Образование
-                        </h2>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>gb.ru</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-                            <p>Web Development! All I need to know in one place</p>
-                            <hr>
-                        </div>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>London Business School</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015
-                            </h6>
-                            <p>Master Degree</p>
-                            <hr>
-                        </div>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>School of Coding</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013
-                            </h6>
-                            <p>Bachelor Degree</p><br>
-                        </div>
-                    </div>
-
-                    <!-- End Right Column -->
+                     }
+                    ?>
                 </div>
 
-                <!-- End Grid -->
+                <div class="w3-container w3-card w3-white">
+                    <h2 class="w3-text-grey w3-padding-16"><i
+                            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Образование
+                    </h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>gb.ru</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+                        <p>Web Development! All I need to know in one place</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>London Business School</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015
+                        </h6>
+                        <p>Master Degree</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>School of Coding</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013
+                        </h6>
+                        <p>Bachelor Degree</p><br>
+                    </div>
+                </div>
+                <!-- End Right Column -->
             </div>
-
-            <!-- End Page Container -->
+            <!-- End Grid -->
         </div>
-
-        <!-- Footer -->
-        <footer class="w3-container w3-teal w3-center w3-margin-top">
-            <p>Find me on social media.</p>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-            <!-- End footer -->
-        </footer>
-
+        <!-- End Page Container -->
+    </div>
+    <!-- Footer -->
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+        <p>Find me on social media.</p>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <!-- End footer -->
+    </footer>
 </body>
 
 </html>
